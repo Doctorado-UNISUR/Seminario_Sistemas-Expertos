@@ -1,0 +1,11 @@
+Se declaran las reglas para el sistema experto a partir del resultado de Weka usando el algoritmo JRip
+
+SI (A6 <= 0) and (A7 <= 0) and (A2 <= 0) and (A3 <= 0) => "No Existen rasgos de TEA"
+SI (A9 <= 0) and (A2 <= 0) and (A6 <= 0) and (A4 <= 0) and (A7 <= 0) => "No Existen rasgos de TEA"
+SI (A5 <= 0) and (A2 <= 0) and (A6 <= 0) and (A10 <= 0) and (A3 <= 0) => "No Existen rasgos de TEA"
+SI (A9 <= 0) and (A1 <= 0) and (A5 <= 0) and (A4 <= 0) and (A2 <= 0) => "No Existen rasgos de TEA"
+SI (A9 <= 0) and (A7 <= 0) and (A10 <= 0) => "No Existen rasgos de TEA"
+SI (A6 <= 0) and (A7 <= 0) and (A1 <= 0) and (A4 <= 0) => "No Existen rasgos de TEA"
+SI (A6 <= 0) and (A9 <= 0) and (A2 <= 0) and (A3 <= 0) => "No Existen rasgos de TEA"
+SI (A9 <= 0) and (A1 <= 0) and (A5 <= 0) and (A10 <= 0) => "No Existen rasgos de TEA"
+SI no  => "Existen rasgos de TEA"

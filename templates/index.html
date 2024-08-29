@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Detección de TEA</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos del encabezado */
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Estilos del contenido principal */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .radio-group {
+            margin-left: 20px;
+        }
+
+        .radio-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos responsive */
+        @media (max-width: 600px) {
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .form-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/static/logo.jpg" alt="Logo de la Empresa" class="logo">
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Test de Detección de TEA</h1>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="A1">A1 ¿Su hijo lo mira cuando lo llama por su nombre?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A1" value="1"> Sí</label>
+                        <label><input type="radio" name="A1" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A2">A2 ¿Qué tan fácil es para usted tener contacto visual con su hijo?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A2" value="1"> Sí</label>
+                        <label><input type="radio" name="A2" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A3">A3 ¿Su hijo señala para indicar que quiere algo? (por ejemplo, un juguete que está fuera de alcance)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A3" value="1"> Sí</label>
+                        <label><input type="radio" name="A3" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A4">A4 ¿Su hijo señala compartir interés con usted? (p. ej., punteando en una vista interesante)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A4" value="1"> Sí</label>
+                        <label><input type="radio" name="A4" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A5">A5 ¿Su hijo finge? (por ejemplo, cuidar muñecas, hablar por un teléfono de juguete)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A5" value="1"> Sí</label>
+                        <label><input type="radio" name="A5" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A6">A6 ¿Su hijo sigue hacia donde usted está mirando?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A6" value="1"> Sí</label>
+                        <label><input type="radio" name="A6" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A7">A7 Si usted u otra persona de la familia está visiblemente molesta, ¿su hijo muestra signos de decaimiento para consolarlo? (por ejemplo, acariciar el cabello, abrazarlos)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A7" value="1"> Sí</label>
+                        <label><input type="radio" name="A7" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A9">A9 ¿Tu hijo utiliza gestos sencillos? (por ejemplo, decir adiós con la mano)</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A9" value="1"> Sí</label>
+                        <label><input type="radio" name="A9" value="0"> No</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="A10">A10 ¿Su hijo mira fijamente a la nada sin un propósito aparente?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="A10" value="1"> Sí</label>
+                        <label><input type="radio" name="A10" value="0"> No</label>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
